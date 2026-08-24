@@ -21,6 +21,11 @@ nav {
     align-items: center;
 }
 
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
 ul {
     display: flex;
     gap: 8px;
