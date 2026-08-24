@@ -23,12 +23,14 @@ nav {
 
 ul {
     display: flex;
+    flex-direction: column;
     gap: 8px;
+    padding: 8px 0 16px 24px;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 a {
     color: white;
@@ -49,7 +51,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin: 0 0 8px;
+    margin: 0 0 24px;
 }
 
 hr {
