@@ -90,6 +90,10 @@ hr {
     gap: 8px;
 }
 
+.checkbox input {
+    margin-left: -16px;
+}
+
 code {
     font-size: 13px;
     padding: 4px 8px;
