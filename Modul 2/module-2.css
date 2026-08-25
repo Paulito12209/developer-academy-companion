@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/*=== HEADER ====*/
+
 header {
     height: 80px;
     display: flex;
@@ -21,16 +23,27 @@ nav {
     align-items: center;
 }
 
-ul {
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav-links {
     display: flex;
-    flex-direction: column;
     gap: 8px;
     padding: 8px 0 16px 24px;
 }
 
-/* li {
+.nav-links li {
     list-style: none;
-} */
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0 32px 24px;
+}
 
 a {
     color: white;
@@ -39,6 +52,10 @@ a {
 /*=== MAIN ===*/
 section {
     padding: 40px 40px;
+}
+
+.lecture {
+    padding: 0 0 32px;
 }
 
 h1 {
@@ -51,11 +68,26 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin: 0 0 24px;
+    margin: 0 0 8px;
+}
+
+h4 {
+    font-size: 18py;
+    color: rgb(89, 89, 89);
 }
 
 hr {
     margin: 4px 0 20px;
+}
+
+.no_dots li {
+    list-style: none;
+}
+
+.checkbox {
+    display: flex;
+    align-items: start;
+    gap: 8px;
 }
 
 code {

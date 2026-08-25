@@ -8,32 +8,124 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a>
+                    <img src="../img/da-logo.jpeg">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#best-practices">Lernhilfen</a></li>
+                <li><a href="#lexikon">Dev Lexikon</a></li>
+
+                <li><a href="#exercises">Übungen</a></li>
+                <li><a href="#modules">Module</a></li>
+            </ul>
+        </nav>
+    </header>
     <section>
         <h1>Modul 2</h1>
         <hr>
-
-    </section>
-    <section>
-        <h2> Sektion 1: Deinen Arbeitsplatz einrichten</h2>
+        <br>
+        <br>
+        <h2>Sektion 1: Deinen Arbeitsplatz einrichten</h2>
         <hr>
-        <h3>Lektion 1 - Einführung: Arbeitsplatz einrichten für den Kursstart @13. September 2025</h3>
+        <div class="lecture">
+            <h3>Lektion 1 - Einführung</h3>
+            <h4>Arbeitsplatz einrichten für den Kursstart @13. September 2025</h4>
+            <br>
+            <span><strong>Überblick</strong></span>
+            <br>
+            <ul class="list">
+                <li>Dies ist die Einführung in eine Kurssektion zum Einrichten des Entwickler-Arbeitsplatzes</li>
+                <li>Ziel ist es, alle notwendigen Werkzeuge bereitzustellen, um die ersten Kursmodule erfolgreich zu
+                    absolvieren</li>
+            </ul>
+            <span><strong>Inhalte der Sektion</strong></span>
+            <ul class="list">
+                <li>Installation und Nutzung von Software zum Schreiben von Code</li>
+                <li>Umgang mit dem Browser aus der Perspektive von Entwicklerinnen und Entwicklern</li>
+                <li>Code hochladen und teilen, um Fragen beantworten zu lassen</li>
+                <li>Erlernen, wie man Fragen stellt, z. B. durch das Erstellen von Bildschirmaufnahmen</li>
+            </ul>
+        </div>
 
-        <span><strong>Überblick</strong></span>
-        <br>
-        <ul>
-            <li>Dies ist die Einführung in eine Kurssektion zum Einrichten des Entwickler-Arbeitsplatzes</li>
-            <li>Ziel ist es, alle notwendigen Werkzeuge bereitzustellen, um die ersten Kursmodule erfolgreich zu
-                absolvieren</li>
-        </ul>
-        <br>
-        <span><strong>Inhalte der Sektion</strong></span>
-        <ul>
-            <li>Installation und Nutzung von Software zum Schreiben von Code</li>
-            <li>Umgang mit dem Browser aus der Perspektive von Entwicklerinnen und Entwicklern</li>
-            <li>Code hochladen und teilen, um Fragen beantworten zu lassen</li>
-            <li>Erlernen, wie man Fragen stellt, z. B. durch das Erstellen von Bildschirmaufnahmen</li>
-        </ul>
+        <div class="lecture">
+            <h3>Lektion 2 - Bildschirmaufnahmen mit Loom</h3>
+            <h4>Loom Tutorial: Bildschirmaufnahmen für Mentoren erstellen</h4>
+            <br>
+            <span><strong>Action Items</strong></span>
+            <ul class="list no_dots">
+                <li class="checkbox">
+                    <input type="checkbox">Loom Desktop-App herunterladen und installieren (nicht die
+                    Chrome-Extension)</input>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox">Kostenlosen Loom-Account erstellen</input>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox">Kamera und Mikrofon in den Loom-Einstellungen konfigurieren</input>
+                </li>
+                <li class="checkbox">
+                    <input type="checkbox">Bei technischen Problemen unter Video & Audio den "Use Fallback Recorder"
+                    aktivieren</input>
+                </li>
+            </ul>
+
+            <span><strong>Warum Loom?</strong></span>
+            <ul class="list">
+                <li>Loom ist eine einfach zu bedienende Screen-Recording-Software, die genau das kann, was man braucht
+                </li>
+                <li>Alternativen wie ScreenPal existieren, aber Loom wird empfohlen</li>
+                <li><strong>Desktop-App statt Chrome-Extension:</strong> Die Extension funktioniert schlechter und
+                    erlaubt nur die Aufnahme von Chrome-Fenstern – mit der Desktop-App können auch der Server, die
+                    Ordnerstruktur oder VSCode gezeigt werden</li>
+            </ul>
+
+            <span><strong>Aufnahme starten</strong></span>
+            <ul class="list">
+                <li>Im Hauptfenster kann zwischen <strong>Fullscreen</strong>, einem <strong>spezifischen
+                        Fenster</strong> (z. B. Chrome)
+                    oder einer <strong>Custom Size</strong>
+                    (nur ein Bildschirmausschnitt) gewählt werden
+                </li>
+                <li><strong>Kamera:</strong> Wird empfohlen – Gestik und Mimik helfen Mentoren, den Kontext besser zu
+                    verstehen und gezielter Unterstützung zu leisten</li>
+                <li><strong>Mikrofon:</strong> Pflicht – es muss kein hochwertiges Gerät sein; das eingebaute
+                    Laptop-Mikrofon reicht aus. Die Aussteuerungsanzeige zeigt, ob das Mikrofon aktiv ist</li>
+                <li>Nach dem Drücken von Start Recording läuft ein kurzer Countdown, danach beginnt die Aufnahme</li>
+                <li>Pause und Fortsetzen sind jederzeit möglich</li>
+            </ul>
+
+            <span><strong>Nach der Aufnahme</strong></span>
+            <ul class="list">
+                <li>Nach dem Beenden der Aufnahme öffnet sich automatisch eine Loom-Seite mit dem fertigen Video</li>
+                <li>Der <strong>Link wird automatisch in die Zwischenablage kopiert</strong> (Strg+V genügt, um ihn
+                    einzufügen) und kann direkt an Mentoren geschickt werden</li>
+                <li>Der Videotitel kann bearbeitet werden, ist aber weniger wichtig als der Inhalt des Videos selbst
+                </li>
+            </ul>
+
+            <span><strong>Einstellungen & Tipps</strong></span>
+            <ul class="list">
+                <li>Unter More → Settings → Recording Controls: Steuerelemente können ausgeblendet werden, sodass sie im
+                    finalen Video nicht sichtbar sind</li>
+                <li>Bei Problemen: Video & Audio → Use Fallback Recorder aktivieren</li>
+                <li>Alle aufgenommenen Videos sind im Account-Bereich abrufbar und können in Ordnern organisiert werden
+                </li>
+            </ul>
+
+            <span><strong>Free Tier</strong></span>
+            <ul class="list">
+                <li>Loom ist kostenlos nutzbar; <strong>5 Videos sind im Free Tier enthalten</strong></li>
+                <li>Gelöschte Videos geben das Kontingent wieder frei – ein Kauf ist nicht notwendig</li>
+            </ul>
+        </div>
+
+
     </section>
+
     <section>
         <h2>Sektion 2</h2>
         <hr>
