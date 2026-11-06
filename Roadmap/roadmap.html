@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lern-Roadmap</title>
+    <link rel="stylesheet" href="roadmap.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/da-logo.jpeg" alt="Developer Akademie Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#job-ready">Job-ready</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Lern-Roadmap: Frontend-Entwickler werden</h1>
+            <hr>
+            <p>Von null zu job-ready: erst HTML, dann CSS, dann JavaScript. Jede Etappe baut auf der vorherigen auf.
+                Wenig Theorie, viel Tippen.</p>
+
+            <ul class="intro-rules">
+                <li><strong>Selbst tippen.</strong> Kein Copy-Paste. Jede Aufgabe in einer eigenen Datei.</li>
+                <li><strong>Hinweis vor Lösung.</strong> Erst 15 Minuten selbst probieren, dann den Hinweis
+                    aufklappen.</li>
+                <li><strong>Quiz ehrlich machen.</strong> Antwort erst denken, dann aufklappen.</li>
+                <li><strong>Lücken-Check.</strong> Unsicher? Dann die Zusatzaufgabe machen, bevor es weitergeht.</li>
+            </ul>
+
+            <ul class="timeline">
+                <li class="phase-html">1 · HTML · ca. 2–3 Wochen</li>
+                <li class="phase-css">2 · CSS · ca. 5–6 Wochen</li>
+                <li class="phase-js">3 · JavaScript · ca. 8–10 Wochen</li>
+                <li class="phase-job">4 · Job-ready · ca. 4–6 Wochen</li>
+            </ul>
+            <p class="meta">Zeiten gelten für ca. 10–15 Stunden pro Woche. Dein Tempo zählt, nicht der Kalender.</p>
+        </section>
+
+        <!-- ================= PHASE 1: HTML ================= -->
+        <section id="html" class="phase phase-html">
+            <h2>Phase 1: HTML – die Struktur</h2>
+            <p class="meta">Ziel: Du baust jede Seite mit sauberer, semantischer Struktur, ohne nachzuschauen.</p>
+
+            <div class="stage">
+                <h3>1.1 Grundgerüst &amp; Text</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich kann das HTML-Grundgerüst aus dem Kopf schreiben</label></li>
+                    <li><label><input type="checkbox"> Ich nutze Überschriften <code>h1</code>–<code>h6</code> in
+                            logischer Reihenfolge</label></li>
+                    <li><label><input type="checkbox"> Ich kenne <code>p</code>, <code>strong</code>,
+                            <code>em</code>, <code>br</code> und Kommentare</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Schreib das Grundgerüst dreimal hintereinander aus dem Kopf (ohne Emmet <code>!</code>).</li>
+                    <li>Baue einen Steckbrief über dich: Name als <code>h1</code>, drei Abschnitte mit
+                        <code>h2</code>.</li>
+                    <li>Markiere in einem Absatz ein Wort als wichtig und eins als betont.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Wofür steht <code>lang="de"</code> im <code>html</code>-Tag?</summary>
+                    <p>Es sagt Browser, Screenreadern und Suchmaschinen, in welcher Sprache die Seite ist.</p>
+                </details>
+                <details>
+                    <summary>Darf eine Seite mehrere <code>h1</code> haben? Was ist Best Practice?</summary>
+                    <p>Technisch ja, Best Practice ist aber eine <code>h1</code> pro Seite als Hauptthema.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Baue die Seite „Mein Lieblingsrezept“ nur mit den Tags dieser Etappe.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Überlege zuerst die Gliederung auf Papier: Titel, Zutaten, Zubereitung, Tipp.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Grundgerüst noch nicht aus dem Kopf? Schreib es
+                    jeden Tag einmal, bis es sitzt.</p>
+            </div>
+
+            <div class="stage">
+                <h3>1.2 Links, Bilder &amp; Listen</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich verlinke intern, extern und zu Ankern (<code>#id</code>)</label></li>
+                    <li><label><input type="checkbox"> Ich verstehe relative und absolute Pfade</label></li>
+                    <li><label><input type="checkbox"> Ich setze Bilder mit sinnvollem <code>alt</code>-Text ein</label></li>
+                    <li><label><input type="checkbox"> Ich unterscheide <code>ul</code>, <code>ol</code> und
+                            verschachtelte Listen</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Baue ein Inhaltsverzeichnis, das per Anker zu drei Abschnitten springt.</li>
+                    <li>Lege einen Ordner <code>img</code> an und binde ein Bild per relativem Pfad ein.</li>
+                    <li>Öffne einen externen Link in einem neuen Tab.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Deine Datei liegt in <code>Modul 2/</code>, das Bild in <code>img/</code>. Wie lautet der
+                        Pfad?</summary>
+                    <p><code>../img/bild.jpg</code> – mit <code>../</code> gehst du einen Ordner nach oben.</p>
+                </details>
+                <details>
+                    <summary>Wann ist <code>alt=""</code> (leer) richtig?</summary>
+                    <p>Bei rein dekorativen Bildern, damit Screenreader sie überspringen.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Baue eine „Top 5 Filme“-Seite: nummerierte Liste, je ein Poster, je ein Link zur Filmseite.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Ein <code>li</code> darf mehrere Elemente enthalten: Überschrift, Bild und Link.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Pfade verwirren dich? Baue drei Ordner-Ebenen und
+                    verlinke jede Datei mit jeder.</p>
+            </div>
+
+            <div class="stage">
+                <h3>1.3 Semantisches HTML</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich nutze <code>header</code>, <code>nav</code>,
+                            <code>main</code>, <code>section</code>, <code>article</code>, <code>footer</code>
+                            richtig</label></li>
+                    <li><label><input type="checkbox"> Ich weiß, wann <code>div</code> und <code>span</code> okay
+                            sind</label></li>
+                    <li><label><input type="checkbox"> Ich kenne <code>details</code>/<code>summary</code> und
+                            <code>figure</code>/<code>figcaption</code></label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Nimm deinen Steckbrief und ersetze alle <code>div</code>s durch semantische Tags.</li>
+                    <li>Baue eine FAQ mit drei aufklappbaren Fragen.</li>
+                    <li>Öffne eine bekannte Website, DevTools (F12), und finde ihre <code>nav</code> und ihr
+                        <code>main</code>.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary><code>section</code> oder <code>article</code> für einen Blogpost?</summary>
+                    <p><code>article</code>: Inhalt, der für sich allein stehen kann.</p>
+                </details>
+                <details>
+                    <summary>Warum ist Semantik wichtig für den Job?</summary>
+                    <p>Barrierefreiheit, SEO und lesbarer Code für dein Team. Wird im Code-Review geprüft.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Bau das Gerüst einer News-Startseite: Kopf mit Navigation, drei Artikel, Seitenleiste, Fußzeile.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Eine Seitenleiste ist ein <code>aside</code>. Zeichne die Kästen zuerst auf Papier.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Unsicher, welcher Tag passt? Schreib zu jedem Tag
+                    einen Satz „Ich nutze X, wenn …“.</p>
+            </div>
+
+            <div class="stage">
+                <h3>1.4 Tabellen &amp; Formulare</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich baue Tabellen mit <code>thead</code>, <code>tbody</code>,
+                            <code>th</code></label></li>
+                    <li><label><input type="checkbox"> Ich baue Formulare mit <code>label</code>, <code>input</code>,
+                            <code>select</code>, <code>textarea</code>, <code>button</code></label></li>
+                    <li><label><input type="checkbox"> Ich nutze Input-Typen (<code>email</code>, <code>number</code>,
+                            <code>date</code>) und <code>required</code></label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Baue deinen Wochen-Lernplan als Tabelle.</li>
+                    <li>Baue ein Kontaktformular mit Name, E-Mail, Nachricht. Jedes Feld hat ein <code>label</code>.</li>
+                    <li>Klick auf ein Label: Springt der Cursor ins Feld? Wenn nicht, finde den Fehler.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Wie verbindest du ein <code>label</code> mit einem <code>input</code>?</summary>
+                    <p><code>for</code> am Label muss gleich der <code>id</code> am Input sein.</p>
+                </details>
+                <details>
+                    <summary>Was passiert bei <code>required</code> und leerem Feld?</summary>
+                    <p>Der Browser verhindert das Absenden und zeigt eine Meldung.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Baue ein Anmeldeformular für einen Coding-Workshop: Name, E-Mail, Level (Auswahl), Termin (Datum),
+                    AGB-Checkbox.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Gruppiere zusammengehörige Felder mit <code>fieldset</code> und <code>legend</code>.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Label-Verknüpfung klappt nicht? Baue fünf Felder nur
+                    zum Üben von <code>for</code>/<code>id</code>.</p>
+            </div>
+
+            <div class="stage">
+                <h3>1.5 Barrierefreiheit &amp; SEO-Basics</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich setze <code>title</code> und <code>meta description</code></label></li>
+                    <li><label><input type="checkbox"> Ich prüfe eine Seite mit Lighthouse (DevTools)</label></li>
+                    <li><label><input type="checkbox"> Ich kann eine Seite nur mit der Tastatur bedienen und Fehler
+                            finden</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Lass Lighthouse über eine deiner Seiten laufen und behebe zwei Hinweise.</li>
+                    <li>Navigiere deine Formular-Seite nur mit <code>Tab</code> und <code>Enter</code>.</li>
+                    <li>Prüfe dein HTML mit dem W3C-Validator (validator.w3.org).</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Warum ist ein <code>button</code> besser als ein klickbares <code>div</code>?</summary>
+                    <p>Er ist per Tastatur erreichbar und wird von Screenreadern als Button erkannt.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Lighthouse unter 90 bei Accessibility? Behebe jeden
+                    Punkt, bis du drüber bist.</p>
+            </div>
+
+            <div class="stage project">
+                <h3>🏁 HTML-Abschlussprojekt: Persönliche Profilseite</h3>
+                <p>Nur HTML, kein CSS. Mehrere Seiten, die sich verlinken.</p>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Startseite, „Über mich“, „Projekte“, „Kontakt“ (mit
+                            Formular)</label></li>
+                    <li><label><input type="checkbox"> Durchgehend semantische Tags, keine Validator-Fehler</label></li>
+                    <li><label><input type="checkbox"> Lighthouse Accessibility ≥ 90</label></li>
+                    <li><label><input type="checkbox"> Im Git-Repo und per GitHub Pages online</label></li>
+                </ul>
+                <p class="meta">Dieses Projekt stylst du in Phase 2 weiter.</p>
+            </div>
+        </section>
+
+        <!-- ================= PHASE 2: CSS ================= -->
+        <section id="css" class="phase phase-css">
+            <h2>Phase 2: CSS – das Aussehen</h2>
+            <p class="meta">Ziel: Du setzt ein Design (z. B. aus Figma) pixelnah und responsiv um.</p>
+
+            <div class="stage">
+                <h3>2.1 Selektoren, Kaskade &amp; Spezifität</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich nutze Element-, Klassen-, ID-, Kombinations- und
+                            Pseudo-Selektoren (<code>:hover</code>)</label></li>
+                    <li><label><input type="checkbox"> Ich erkläre, warum eine Regel gewinnt (Spezifität,
+                            Reihenfolge)</label></li>
+                    <li><label><input type="checkbox"> Ich binde CSS als externe Datei ein</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Färbe nur den ersten Absatz jeder <code>section</code> anders.</li>
+                    <li>Gib allen Links einen Hover-Effekt.</li>
+                    <li>Schreib zwei Regeln für dasselbe Element und sag vorher, welche gewinnt. Prüfe in den DevTools.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was gewinnt: <code>.box p</code> oder <code>p</code>?</summary>
+                    <p><code>.box p</code> – die Klasse macht ihn spezifischer.</p>
+                </details>
+                <details>
+                    <summary>Warum sind Klassen im Job meist besser als IDs zum Stylen?</summary>
+                    <p>Wiederverwendbar und niedrige Spezifität, also leichter zu überschreiben.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Style eine Navigation: aktiver Link hervorgehoben, Hover-Effekt, kein Unterstrich.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Eine Klasse wie <code>.active</code> plus <code>text-decoration</code>.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Spezifität unklar? Spiele 10 Runden „Welche Regel
+                    gewinnt?“ mit dir selbst in den DevTools.</p>
+            </div>
+
+            <div class="stage">
+                <h3>2.2 Box-Modell, Einheiten, Farben &amp; Typografie</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich verstehe <code>margin</code>, <code>border</code>,
+                            <code>padding</code>, <code>content</code> und <code>box-sizing</code></label></li>
+                    <li><label><input type="checkbox"> Ich wähle passend zwischen <code>px</code>, <code>rem</code>,
+                            <code>%</code>, <code>vw</code>/<code>vh</code></label></li>
+                    <li><label><input type="checkbox"> Ich binde eine Google Font ein und setze Zeilenhöhe &amp;
+                            Abstände</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Baue eine Karte (Card) mit Rahmen, Innenabstand und abgerundeten Ecken.</li>
+                    <li>Schau dir die Karte im DevTools-Box-Modell an und ändere die Werte live.</li>
+                    <li>Stelle alle Schriftgrößen auf <code>rem</code> um.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Eine Box hat <code>width: 200px</code> und <code>padding: 20px</code>. Wie breit ist sie
+                        ohne <code>box-sizing: border-box</code>?</summary>
+                    <p>240px. Mit <code>border-box</code> bleibt sie 200px.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Style eine Preis-Karte mit Titel, Preis, Feature-Liste und Button.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Erst Abstände (Box-Modell), dann Farben, dann Schrift. In dieser Reihenfolge.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Abstände wirken zufällig? Zeichne jedem Element
+                    <code>outline: 1px solid red</code> und schau, wo der Platz herkommt.</p>
+            </div>
+
+            <div class="stage">
+                <h3>2.3 Flexbox</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich richte Elemente mit <code>justify-content</code> und
+                            <code>align-items</code> aus</label></li>
+                    <li><label><input type="checkbox"> Ich nutze <code>gap</code>, <code>flex-wrap</code>,
+                            <code>flex-direction</code>, <code>flex: 1</code></label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Zentriere eine Box horizontal und vertikal auf der Seite.</li>
+                    <li>Baue eine Navigation: Logo links, Links rechts.</li>
+                    <li>Spiele Flexbox Froggy (flexboxfroggy.com) komplett durch.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was ändert sich, wenn du <code>flex-direction: column</code> setzt?</summary>
+                    <p>Die Hauptachse dreht sich: <code>justify-content</code> wirkt jetzt vertikal.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Baue drei Preis-Karten nebeneinander, die auf kleinen Bildschirmen umbrechen.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p><code>flex-wrap: wrap</code> und eine Mindestbreite an den Karten.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Haupt- und Querachse verwechselt? Zeichne beide
+                    Pfeile auf einen Zettel neben den Bildschirm.</p>
+            </div>
+
+            <div class="stage">
+                <h3>2.4 CSS Grid</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich baue Layouts mit <code>grid-template-columns</code> und
+                            <code>fr</code></label></li>
+                    <li><label><input type="checkbox"> Ich nutze <code>grid-template-areas</code> für
+                            Seitenlayouts</label></li>
+                    <li><label><input type="checkbox"> Ich weiß, wann Grid und wann Flexbox</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Baue eine Bildergalerie mit 3 Spalten.</li>
+                    <li>Mach sie mit <code>repeat(auto-fit, minmax(200px, 1fr))</code> automatisch responsiv.</li>
+                    <li>Spiele Grid Garden (cssgridgarden.com) komplett durch.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Faustregel Grid vs. Flexbox?</summary>
+                    <p>Grid für zweidimensionale Layouts (Zeilen und Spalten), Flexbox für eine Richtung.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Style deine News-Startseite aus 1.3 mit Grid: Header, Hauptbereich, Seitenleiste, Footer.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Benenne die Bereiche mit <code>grid-area</code> und zeichne sie als Text in
+                        <code>grid-template-areas</code>.</p>
+                </details>
+            </div>
+
+            <div class="stage">
+                <h3>2.5 Responsive Design</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich arbeite Mobile-First mit Media Queries</label></li>
+                    <li><label><input type="checkbox"> Ich teste mit dem DevTools-Gerätemodus</label></li>
+                    <li><label><input type="checkbox"> Ich mache Bilder responsiv (<code>max-width: 100%</code>)</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Mach deine Navigation auf dem Handy untereinander, auf dem Desktop nebeneinander.</li>
+                    <li>Teste deine Seite bei 375px, 768px und 1440px Breite.</li>
+                    <li>Nutze <code>clamp()</code> für eine mitwachsende Überschrift.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was bedeutet Mobile-First in CSS konkret?</summary>
+                    <p>Basis-Styles fürs Handy, dann mit <code>min-width</code>-Media-Queries für größere Bildschirme
+                        erweitern.</p>
+                </details>
+                <details>
+                    <summary>Welches Meta-Tag brauchst du für responsive Seiten?</summary>
+                    <p><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Horizontaler Scrollbalken auf dem Handy? Finde das
+                    Element, das zu breit ist (DevTools, Element für Element).</p>
+            </div>
+
+            <div class="stage">
+                <h3>2.6 Variablen, Animationen &amp; sauberes CSS</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich nutze Custom Properties (<code>--farbe</code>) für Farben
+                            und Abstände</label></li>
+                    <li><label><input type="checkbox"> Ich setze <code>transition</code> und einfache
+                            <code>@keyframes</code> ein</label></li>
+                    <li><label><input type="checkbox"> Ich benenne Klassen nach einem System (z. B. BEM)</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Lege alle Farben deiner Seite als Variablen in <code>:root</code> an.</li>
+                    <li>Gib Buttons eine sanfte Hover-Transition.</li>
+                    <li>Benenne die Klassen deiner Preis-Karte nach BEM um (<code>.card__title</code>).</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Warum Variablen statt fester Farbwerte?</summary>
+                    <p>Eine Änderung an einer Stelle wirkt überall. Basis für Dark Mode und Design-Systeme.</p>
+                </details>
+            </div>
+
+            <div class="stage project">
+                <h3>🏁 CSS-Abschlussprojekt: Responsive Landingpage</h3>
+                <p>Setze eine Landingpage nach einer Figma-Vorlage um (z. B. Frontend Mentor, kostenlose Challenges).</p>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Mobile, Tablet und Desktop sehen sauber aus</label></li>
+                    <li><label><input type="checkbox"> Flexbox und Grid sinnvoll eingesetzt</label></li>
+                    <li><label><input type="checkbox"> Farben und Abstände über Variablen</label></li>
+                    <li><label><input type="checkbox"> Profilseite aus Phase 1 ist fertig gestylt</label></li>
+                    <li><label><input type="checkbox"> Beides online auf GitHub Pages</label></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= PHASE 3: JAVASCRIPT ================= -->
+        <section id="javascript" class="phase phase-js">
+            <h2>Phase 3: JavaScript – das Verhalten</h2>
+            <p class="meta">Ziel: Du baust interaktive Web-Apps, die auf Nutzer reagieren und Daten laden.</p>
+
+            <div class="stage">
+                <h3>3.1 Variablen, Datentypen &amp; Operatoren</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich nutze <code>let</code> und <code>const</code> (und weiß,
+                            warum nicht <code>var</code>)</label></li>
+                    <li><label><input type="checkbox"> Ich kenne String, Number, Boolean, <code>null</code>,
+                            <code>undefined</code></label></li>
+                    <li><label><input type="checkbox"> Ich nutze Template-Strings und <code>console.log</code></label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Speichere Name und Alter in Variablen und gib einen Satz per Template-String aus.</li>
+                    <li>Rechne eine Temperatur von Celsius in Fahrenheit um.</li>
+                    <li>Prüfe mit <code>typeof</code> fünf verschiedene Werte.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was ergibt <code>"5" + 3</code> und was <code>"5" - 3</code>?</summary>
+                    <p><code>"53"</code> und <code>2</code>. Das <code>+</code> verbindet Strings, das <code>-</code>
+                        rechnet.</p>
+                </details>
+                <details>
+                    <summary>Unterschied <code>==</code> und <code>===</code>?</summary>
+                    <p><code>===</code> prüft auch den Typ. Im Job nutzt du fast immer <code>===</code>.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Typen verwirren dich? Rate bei 10 Ausdrücken das
+                    Ergebnis, dann prüfe in der Konsole.</p>
+            </div>
+
+            <div class="stage">
+                <h3>3.2 Bedingungen, Schleifen &amp; Funktionen</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich nutze <code>if/else</code> und den
+                            Ternary-Operator</label></li>
+                    <li><label><input type="checkbox"> Ich nutze <code>for</code>- und
+                            <code>while</code>-Schleifen</label></li>
+                    <li><label><input type="checkbox"> Ich schreibe Funktionen mit Parametern und
+                            <code>return</code>, auch als Arrow Function</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Schreib eine Funktion <code>isEven(zahl)</code>, die <code>true</code> oder
+                        <code>false</code> zurückgibt.</li>
+                    <li>Gib alle Zahlen von 1 bis 100 aus (FizzBuzz: durch 3 „Fizz“, durch 5 „Buzz“).</li>
+                    <li>Schreib eine Funktion, die eine Note (1–6) in Text umwandelt.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was gibt eine Funktion ohne <code>return</code> zurück?</summary>
+                    <p><code>undefined</code>.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Zahlen-Ratespiel in der Konsole: Computer denkt sich 1–100 aus, du rätst, er sagt „höher“ oder
+                    „tiefer“.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p><code>Math.random()</code>, <code>Math.floor()</code> und <code>prompt()</code> in einer
+                        Schleife.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Schleifen hakeln? Löse 5 kleine Aufgaben auf
+                    codewars.com (8 kyu).</p>
+            </div>
+
+            <div class="stage">
+                <h3>3.3 Arrays &amp; Objekte</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich arbeite mit Arrays (<code>push</code>,
+                            <code>length</code>, Index)</label></li>
+                    <li><label><input type="checkbox"> Ich nutze <code>map</code>, <code>filter</code>,
+                            <code>find</code>, <code>forEach</code></label></li>
+                    <li><label><input type="checkbox"> Ich baue Objekte und Arrays von Objekten</label></li>
+                    <li><label><input type="checkbox"> Ich kenne Destructuring und Spread (<code>...</code>)</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Lege ein Array mit 5 Produkten (Name, Preis) an.</li>
+                    <li>Filtere alle Produkte unter 20 €.</li>
+                    <li>Erzeuge mit <code>map</code> ein Array nur mit den Namen.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Unterschied <code>map</code> und <code>forEach</code>?</summary>
+                    <p><code>map</code> gibt ein neues Array zurück, <code>forEach</code> nicht.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Berechne aus einem Warenkorb-Array (Name, Preis, Menge) die Gesamtsumme.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Schau dir <code>reduce</code> an. Oder erst mit einer <code>for</code>-Schleife, dann
+                        umbauen.</p>
+                </details>
+            </div>
+
+            <div class="stage">
+                <h3>3.4 DOM &amp; Events</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich wähle Elemente mit <code>querySelector</code></label></li>
+                    <li><label><input type="checkbox"> Ich ändere Text, Klassen und Styles per JS</label></li>
+                    <li><label><input type="checkbox"> Ich reagiere mit <code>addEventListener</code> auf Klicks und
+                            Eingaben</label></li>
+                    <li><label><input type="checkbox"> Ich erzeuge Elemente dynamisch aus einem Array</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Ein Button zählt bei jedem Klick eine Zahl hoch.</li>
+                    <li>Ein Button schaltet Dark Mode an und aus (<code>classList.toggle</code>).</li>
+                    <li>Render dein Produkt-Array aus 3.3 als Liste auf der Seite.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Warum ist <code>innerHTML</code> mit Nutzereingaben gefährlich?</summary>
+                    <p>Eingeschleuster Code kann ausgeführt werden (XSS). Für reinen Text nutzt du
+                        <code>textContent</code>.</p>
+                </details>
+                <h4>Challenge</h4>
+                <p>Mach die Häkchen auf dieser Roadmap-Seite speicherbar, damit sie nach dem Neuladen bleiben.</p>
+                <details>
+                    <summary>Hinweis</summary>
+                    <p>Alle Checkboxen per <code>querySelectorAll</code>, Event <code>change</code>, und schau dir
+                        Etappe 3.5 an.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Nichts passiert beim Klick? Konsole öffnen. Erst
+                    prüfen, ob dein Element überhaupt gefunden wird (<code>console.log</code>).</p>
+            </div>
+
+            <div class="stage">
+                <h3>3.5 Formulare &amp; localStorage</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich lese Formularwerte aus und verhindere das Neuladen
+                            (<code>preventDefault</code>)</label></li>
+                    <li><label><input type="checkbox"> Ich speichere Daten mit <code>localStorage</code> und
+                            <code>JSON.stringify</code>/<code>parse</code></label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Formular mit Namen: Nach Absenden steht „Hallo, Name!“ auf der Seite.</li>
+                    <li>Speichere den Namen, sodass er nach Neuladen noch da ist.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Warum brauchst du <code>JSON.stringify</code> für Arrays im localStorage?</summary>
+                    <p>localStorage speichert nur Strings.</p>
+                </details>
+            </div>
+
+            <div class="stage project">
+                <h3>🏁 Zwischenprojekt: To-do-App</h3>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Aufgaben hinzufügen, abhaken, löschen</label></li>
+                    <li><label><input type="checkbox"> Filter: alle, offen, erledigt</label></li>
+                    <li><label><input type="checkbox"> Bleibt nach Neuladen gespeichert</label></li>
+                    <li><label><input type="checkbox"> Responsiv gestylt, online auf GitHub Pages</label></li>
+                </ul>
+            </div>
+
+            <div class="stage">
+                <h3>3.6 Asynchrones JavaScript &amp; APIs</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich lade Daten mit <code>fetch</code> und
+                            <code>async</code>/<code>await</code></label></li>
+                    <li><label><input type="checkbox"> Ich behandle Fehler mit <code>try</code>/<code>catch</code></label></li>
+                    <li><label><input type="checkbox"> Ich zeige Lade- und Fehlerzustände an</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Lade einen Witz von einer öffentlichen API und zeig ihn an.</li>
+                    <li>Zeig „Lädt …“, solange die Daten kommen.</li>
+                    <li>Provoziere einen Fehler (falsche URL) und zeig eine freundliche Meldung.</li>
+                </ol>
+                <h4>Quiz</h4>
+                <details>
+                    <summary>Was macht <code>await</code>?</summary>
+                    <p>Es wartet, bis ein Promise fertig ist, ohne die Seite zu blockieren.</p>
+                </details>
+                <p class="gap-check"><strong>Lücken-Check:</strong> Daten kommen nicht an? DevTools, Tab „Network“:
+                    Statuscode und Antwort ansehen.</p>
+            </div>
+
+            <div class="stage">
+                <h3>3.7 Module, Debugging &amp; sauberer Code</h3>
+                <h4>Lernziele</h4>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Ich teile Code mit <code>import</code>/<code>export</code> auf
+                            mehrere Dateien auf</label></li>
+                    <li><label><input type="checkbox"> Ich setze Breakpoints in den DevTools</label></li>
+                    <li><label><input type="checkbox"> Ich benenne Variablen und Funktionen sprechend</label></li>
+                </ul>
+                <h4>Mini-Aufgaben</h4>
+                <ol>
+                    <li>Teile deine To-do-App in drei Module auf (Daten, Anzeige, Start).</li>
+                    <li>Setze einen Breakpoint und geh Schritt für Schritt durch eine Funktion.</li>
+                </ol>
+            </div>
+
+            <div class="stage project">
+                <h3>🏁 JavaScript-Abschlussprojekt: Wetter- oder Quiz-App</h3>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Lädt echte Daten von einer API (z. B. Open-Meteo, ohne
+                            Key)</label></li>
+                    <li><label><input type="checkbox"> Suche/Eingabe, Lade- und Fehlerzustand</label></li>
+                    <li><label><input type="checkbox"> Code in Module aufgeteilt</label></li>
+                    <li><label><input type="checkbox"> README mit Screenshot, online auf GitHub Pages</label></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= PHASE 4: JOB-READY ================= -->
+        <section id="job-ready" class="phase phase-job">
+            <h2>Phase 4: Job-ready</h2>
+            <p class="meta">Ziel: Bewerbungsfähig mit Portfolio und den Tools, die in Stellenanzeigen stehen.</p>
+
+            <div class="stage">
+                <h3>4.1 Git &amp; GitHub im Team</h3>
+                <p class="meta">Läuft ab Phase 1 nebenher mit. Hier vertiefst du es.</p>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> <code>add</code>, <code>commit</code>, <code>push</code>,
+                            <code>pull</code> sicher</label></li>
+                    <li><label><input type="checkbox"> Branches, Pull Requests, Merge-Konflikte lösen</label></li>
+                    <li><label><input type="checkbox"> Gute Commit-Messages schreiben</label></li>
+                </ul>
+            </div>
+
+            <div class="stage">
+                <h3>4.2 Portfolio</h3>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> Eigene Portfolio-Seite mit 3–5 besten Projekten</label></li>
+                    <li><label><input type="checkbox"> Jedes Projekt: Live-Link, Code-Link, 2 Sätze zum
+                            Problem</label></li>
+                    <li><label><input type="checkbox"> GitHub-Profil aufgeräumt, LinkedIn verlinkt</label></li>
+                </ul>
+            </div>
+
+            <div class="stage">
+                <h3>4.3 Ausblick: Framework &amp; TypeScript</h3>
+                <p>Die meisten Stellen verlangen ein Framework. Erst wenn JavaScript sitzt:</p>
+                <ul class="checks">
+                    <li><label><input type="checkbox"> TypeScript-Grundlagen (Typen für Variablen und
+                            Funktionen)</label></li>
+                    <li><label><input type="checkbox"> Ein Framework: React (größter Markt) oder Angular</label></li>
+                    <li><label><input type="checkbox"> Die To-do-App im Framework neu bauen</label></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Schritt für Schritt. Jeder Haken zählt. 💪</p>
+    </footer>
+</body>
+
+</html>

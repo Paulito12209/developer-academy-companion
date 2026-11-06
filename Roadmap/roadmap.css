@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.5;
+    color: rgb(33, 33, 33);
+    background: rgb(250, 250, 250);
+}
+
+/*=== HEADER ====*/
+
+header {
+    height: 80px;
+    display: flex;
+    padding: 0 40px;
+    background: rgb(53, 53, 53);
+    color: white;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+}
+
+/*=== MAIN ===*/
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 16px 0 4px;
+    color: rgb(89, 89, 89);
+}
+
+hr {
+    margin: 4px 0 20px;
+}
+
+p {
+    margin: 0 0 12px;
+}
+
+a {
+    color: rgb(51, 51, 119);
+}
+
+ul,
+ol {
+    padding-left: 24px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+code {
+    font-size: 13px;
+    padding: 2px 6px;
+    color: rgb(255, 42, 0);
+    background: rgb(227, 227, 227);
+    overflow-wrap: anywhere;
+}
+
+/*=== ROADMAP ===*/
+
+.intro-rules {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+    padding: 0;
+}
+
+.intro-rules li {
+    list-style: none;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 8px;
+}
+
+.timeline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.timeline li {
+    list-style: none;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: white;
+    font-size: 14px;
+}
+
+.phase-html {
+    --accent: rgb(227, 79, 38);
+}
+
+.phase-css {
+    --accent: rgb(21, 114, 182);
+}
+
+.phase-js {
+    --accent: rgb(190, 150, 0);
+}
+
+.phase-job {
+    --accent: rgb(46, 125, 50);
+}
+
+.timeline li.phase-html,
+.timeline li.phase-css,
+.timeline li.phase-js,
+.timeline li.phase-job {
+    background: var(--accent);
+}
+
+.phase {
+    border-top: 6px solid var(--accent);
+}
+
+.phase>h2 {
+    color: var(--accent);
+}
+
+.meta {
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+}
+
+.stage {
+    margin: 24px 0;
+    padding: 20px 24px;
+    background: white;
+    border: 1px solid rgb(220, 220, 220);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+}
+
+.project {
+    background: rgb(245, 245, 245);
+}
+
+.checks {
+    padding-left: 0;
+}
+
+.checks li {
+    list-style: none;
+}
+
+.checks label {
+    display: block;
+    position: relative;
+    padding-left: 26px;
+    cursor: pointer;
+}
+
+.checks input {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+details {
+    margin: 6px 0;
+    padding: 6px 12px;
+    background: rgb(245, 245, 245);
+    border-radius: 6px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+details p,
+details ul {
+    margin-top: 8px;
+}
+
+.gap-check {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 1px dashed var(--accent);
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: rgb(120, 120, 120);
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding: 16px;
+    }
+
+    section {
+        padding: 24px 16px;
+    }
+
+    .stage {
+        padding: 16px;
+    }
+}
